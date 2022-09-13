@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="style" rel="stylesheet" href="CSS/style.css">
+    <title>Noah Soqui</title>
+</head>
+<body>
+    <!-- header -->
+    <div class="header">
+        <ul class="navbar"> 
+            <div class="navbarLeft">
+                <button type="button" onclick="dropdown()" id="dropbtn">Menu</button>
+                <button type="button" onclick="home()" id="me" class="link" >Noah Soqui</button>
+            </div>
+            <div class="navbarRight">
+                <button onclick="enableTerminal()" id="terminalButton" class="link">~$</button>
+            </div>  
+        </ul>  
+        <div class="terminalBox">
+            <textarea id="terminal" spellcheck="false" name="Text1" cols="40" rows="20" hidden></textarea>
+        </div>
+        <div class="dropdown-content" id="dropdownContent" hidden>
+            <li><button type="button" onclick="home()" id="currentPage" class="link" >Home</button></li>
+            <li><button type="button" onclick="projects()" class="link">Projects</button></li>
+            <li><button type="button" onclick="experience()" class="link">Experience</button></li>
+            <li><button type="button" onclick="certifications()" class="link">Certifications</button></li>    
+            <li><button type="button" onclick="qualifications()" class="link">Qualifications</button></li>
+            <li><button type="button" onclick="service()" class="link">Service</button></li>
+            <li><button type="button" onclick="personalStatement()" class="link">Personal Statement</button></li>
+        </div>
+    </div> 
+    <script src="JS/navbar.js"></script>
+    <script src="JS/terminal.js"></script>
+    <!-- content [Changes based on page] -->
+    <div class="content">
+        <div class="breakingCols">
+            <div class="window">
+                <h1>DocxGen</h1> 
+                <h4>A markdown and docx generator for offensive security</h4>
+                <img src="Images/projects/DocxGenApp.png" height="200"> 
+                <p>A large part of Penetration testing, and Vulnerability Assessment is creating reports. After all, it it the only outcome that has business use in risk management. However, it takes a lot of time and money to turn the raw data into something customer readable, and there is the risk of human error when churning out so many reports. This app will create markdown documents that can be edited in vim (or editor of choice) easily , in a formatted way. After filling out the document, it will be able to easily generate a dynamic, customer readable docx document using a template, and json file that can be updated without recompiling. This app reduced time, as well as prevented errors in creating Penetration testing, and Vulnerability Assessment. It was also later applied to Statement of Work Documents. Supports Windows and Mac OS.</p>
+                <p>This app was created for Netsync Network Solutions, and thus no source code is available as I do not own it.</p>
+
+            </div>
+            <div class="window">
+                <h1>Personal Website</h1>
+                <h4>A website to display my information and connect with others</h4> 
+                <img src="Images/projects/myWebsite.png" height="200"> 
+                <p>This website was originally apart of my CSCE 315 Programming Studio class. It was written in HTML, JS, and CSS. Works as most portfolio websites would, using multiple pages and a consistent navbar. It also includes a terminal emulator to run commands and other fun additions.</p>
+                <h4>See the code: <a class="greenLink" href="https://github.com/cysoq/Personal-Website" target="_blank">Personal Website</a> </h4> 
+            </div>
+        </div>
+        <div class="breakingCols">
+            <div class="window">
+                <h1>Quizlet's for Security+ and Network+</h1>
+                <h4>A very large amount of material following CompTIA curriculum</h4> 
+                <p>Can use it to supplement study, to verify learning, or to use the testing feature for preparation</p>
+                <h4>Join the Security+ class <a class="greenLink" href="https://quizlet.com/join/f82aRHqHx" target="_blank">here</a></h4>
+                <h4>Join the Network+ class <a class="greenLink" href="https://quizlet.com/join/FRrG6T6RW" target="_blank">here</a></h4>
+                <p>Any issues in joining the class, or any questions about how to use them, please feel free to reach out</p>
+            </div>
+            <div class="window">
+                <h1>More Projects</h1>
+                <h4>Check out my Github for more!</h4> 
+                <p>Will see that that I am currently work on Cybersecurity Penetration Testing Notes that will be soon be deployed as a cybersecurity resource site</p>
+                <button class="defaultButton" type="submit" onclick="window.open('https://github.com/cysoq', 'blank')">Github</button>
+            </div> 
+        </div>
+    </div>
+</body>
+</html>

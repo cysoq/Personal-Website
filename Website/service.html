@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="style" rel="stylesheet" href="CSS/style.css">
+    <title>Noah Soqui</title>
+</head>
+<body>
+    <!-- header -->
+    <div class="header">
+        <ul class="navbar"> 
+            <div class="navbarLeft">
+                <button type="button" onclick="dropdown()" id="dropbtn">Menu</button>
+                <button type="button" onclick="home()" id="me" class="link" >Noah Soqui</button>
+            </div>
+            <div class="navbarRight">
+                <button onclick="enableTerminal()" id="terminalButton" class="link">~$</button>
+            </div>  
+        </ul>  
+        <div class="terminalBox">
+            <textarea id="terminal" spellcheck="false" name="Text1" cols="40" rows="20" hidden></textarea>
+        </div>
+        <div class="dropdown-content" id="dropdownContent" hidden>
+            <li><button type="button" onclick="home()" id="currentPage" class="link" >Home</button></li>
+            <li><button type="button" onclick="projects()" class="link">Projects</button></li>
+            <li><button type="button" onclick="experience()" class="link">Experience</button></li>
+            <li><button type="button" onclick="certifications()" class="link">Certifications</button></li>    
+            <li><button type="button" onclick="qualifications()" class="link">Qualifications</button></li>
+            <li><button type="button" onclick="service()" class="link">Service</button></li>
+            <li><button type="button" onclick="personalStatement()" class="link">Personal Statement</button></li>
+        </div>
+    </div> 
+    <script src="JS/navbar.js"></script>
+    <script src="JS/terminal.js"></script>
+    <!-- content [Changes based on page] -->
+    <div class="content">
+        <div class="window">
+            <h1>Service</h1>
+            <p>Training others in cybersecurity, especially college students like myself is very rewarding. Cybersecurity is vast and interesting, a true lifetime endeavor. However this can make it difficult to find a good start. Because of this, I have made sure create and provide extensive reference notes, cheat sheets, and Quizlet's, all of them relating to certifications I have gotten, trainings I have received, and/or experience on the job. All of which can be seen on my GitHub, or under my <strong><a class="greenLink" href="projects.html">projects</a></strong> tab.</p>
+        </div>
+    </div>
+</body>
+</html>

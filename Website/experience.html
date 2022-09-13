@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="style" rel="stylesheet" href="CSS/style.css">
+    <title>Noah Soqui</title>
+</head>
+<body>
+    <!-- header -->
+    <div class="header">
+        <ul class="navbar"> 
+            <div class="navbarLeft">
+                <button type="button" onclick="dropdown()" id="dropbtn">Menu</button>
+                <button type="button" onclick="home()" id="me" class="link" >Noah Soqui</button>
+            </div>
+            <div class="navbarRight">
+                <button onclick="enableTerminal()" id="terminalButton" class="link">~$</button>
+            </div>  
+        </ul>  
+        <div class="terminalBox">
+            <textarea id="terminal" spellcheck="false" name="Text1" cols="40" rows="20" hidden></textarea>
+        </div>
+        <div class="dropdown-content" id="dropdownContent" hidden>
+            <li><button type="button" onclick="home()" id="currentPage" class="link" >Home</button></li>
+            <li><button type="button" onclick="projects()" class="link">Projects</button></li>
+            <li><button type="button" onclick="experience()" class="link">Experience</button></li>
+            <li><button type="button" onclick="certifications()" class="link">Certifications</button></li>    
+            <li><button type="button" onclick="qualifications()" class="link">Qualifications</button></li>
+            <li><button type="button" onclick="service()" class="link">Service</button></li>
+            <li><button type="button" onclick="personalStatement()" class="link">Personal Statement</button></li>
+        </div>
+    </div> 
+    <script src="JS/navbar.js"></script>
+    <script src="JS/terminal.js"></script>
+    <!-- content [Changes based on page] -->
+    <div class="content">
+        <div class="window">
+            <h1>Experience</h1>
+            <hr>
+            <h2><gr>Cybersecurity apprentice, student technician</gr></h2>
+            <img class="imgMaxSmall" src="Images/experience/tamu-logo.png">
+            <h4><a href="https://www.tamu.edu/" target="_blank">Texas A&M University</a> · Part-time<br>
+                <gre>Oct 2021 - Present · 1 yr<br>
+                College Station-Bryan Area</gre></h4>
+            <p>Cybersecurity apprentice learning security and computing theory while getting hands-on cybersecurity experience in real-time. Currently training to earn industry certifications and learn relevant skills necessary for success in the cybersecurity industry. Skills such as pentesting, computer forensics, computer networks, packet and SIEM analysis. Furthermore, these skills are practiced with specific tool training such as tools such as Splunk, CrowdStrike, ExtraHop, etc.</p>
+            <hr>
+            <h2><gr>SOC Intern</gr></h2>
+            <img class="imgMaxBorderNorm" src="Images/experience/netsync-logo.png">
+            <h4><a href="https://www.netsync.com/" target="_blank">NETSYNC</a> · Internship<br>
+                <gre>May 2022 - Aug 2022 · 4 mos<br>
+                Dallas, Texas, United States</gre></h4>
+            <p>Working as a SOC analyst as well as working with the offensive security team. Preforming SOC investigations, doing simulated penetration testing, programing report automation, and legitimate internal penetration tests.<br>Successfully Implemented report automation for the Offensive Security team. Dynamically creates client readable docx documents from markdown documents that supports markdown syntax. Functions via a desktop application GUI, and saves time, as well as prevents mistakes</p>
+            <hr>
+            <h2><gr>Service Desk Technician</gr></h2>
+            <img class="imgMaxBorderNorm" src="Images/experience/logicalis-logo.png">
+            <h4><a href="https://www.us.logicalis.com/" target="_blank">LogicalisUS</a> · Full-time<br>
+                <gre>May 2021 - Aug 2021 · 4 mos<br>
+                Remote</gre></h4>
+            <p>Served as tier one support for the Exact Sciences service desk. Supporting hardware and software issues.</p>
+        </div>
+    </div>
+</body>
+</html>

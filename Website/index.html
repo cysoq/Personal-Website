@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="style" rel="stylesheet" href="CSS/style.css">
+    <title>Noah Soqui</title>
+</head>
+<body>
+    <!-- header -->
+    <div class="header">
+        <ul class="navbar"> 
+            <div class="navbarLeft">
+                <button type="button" onclick="dropdown()" id="dropbtn">Menu</button>
+                <button type="button" onclick="home()" id="me" class="link" >Noah Soqui</button>
+            </div>
+            <div class="navbarRight">
+                <button onclick="enableTerminal()" id="terminalButton" class="link">~$</button>
+            </div>  
+        </ul>  
+        <div class="terminalBox">
+            <textarea id="terminal" spellcheck="false" name="Text1" cols="40" rows="20" hidden></textarea>
+        </div>
+        <div class="dropdown-content" id="dropdownContent" hidden>
+            <li><button type="button" onclick="home()" id="currentPage" class="link" >Home</button></li>
+            <li><button type="button" onclick="projects()" class="link">Projects</button></li>
+            <li><button type="button" onclick="experience()" class="link">Experience</button></li>
+            <li><button type="button" onclick="certifications()" class="link">Certifications</button></li>    
+            <li><button type="button" onclick="qualifications()" class="link">Qualifications</button></li>
+            <li><button type="button" onclick="service()" class="link">Service</button></li>
+            <li><button type="button" onclick="personalStatement()" class="link">Personal Statement</button></li>
+        </div>
+    </div> 
+    <!-- content [Changes based on page] -->
+    <div class="content">
+
+        <div class="window">
+            <h1>About</h1>
+            <h4><r>TAMU</r> CS '24 | Security and Software Engineer | TAMU <a href="https://cybersecurity.tamu.edu/education/texas-am-defense-cyber-leader-development-program/" target="_blank">DCLDP</a> | SEC+ | NET+</h4>
+            <p>I am a computer science student and cybersecurity apprentice who is intent on creating advancements in technology, as well as advancements in the security of that technology. Currently studying topics in cybersecurity such as security analysis, security engineering, penetrating testing, exploit development, secure coding, etc. Also studying computer science topics such as Data Structures, algorithms, computer organization, software engineering, application development, web development, etc.</p>
+            <p>See more by clicking the <strong><gr>Menu</gr></strong> in the top left corner and by reading my <strong><a class="greenLink" href="personalStatement.html">Personal Statement</a></strong>.</p>
+        </div>
+
+        <div class="breakingCols">
+            <div class="window">
+                <h1>Terminal</h1>  
+                <h4>Interact using the <gr>~$</gr> button in the top right corner</h4>
+                <p>For those that are most comfortable with a CLI, perhaps even afraid of a GUI, check out the terminal associated with this website.</p>
+                <p>Will allow basic commands to navigate, use tools, etc. Check out what you can do with the <gr>help</gr> command. Can learn more about a command by running it with no arguments.</p> 
+                <p><r>Example</r>: by running <gr>style</gr>, you will see that you have the options of default, light, and off. More comfortable in light mode? run <gr>style light</gr>. change your mind? run <gr>style default</gr>.</p>
+                <p>Also, feel free to resize the terminal by dragging the bottom left corner.</p>
+                <p>Look out for <gr>easter eggs</gr>!</p>
+            </div>
+            <div class="window">
+                <h1>Contact</h1>
+                <h4>Email: <gr><em>nsoqui1@me.com</em></gr></h4>
+                <h4>Linkedln: <a class="greenLink" href="http://www.linkedin.com/in/noah-soqui-513674200" target="_blank">Noah Soqui</a></h4>  
+                <h4>Github: <a class="greenLink" href="https://github.com/cysoq" target="_blank">cysoq</a></h4>             
+                <p>Please feel free to send me an email, link with me on LinkedIn, and/or check out my Github. </p>
+                <h1>Resume</h1>
+                <br>
+                <button class="defaultButton" type="submit" onclick="window.open('Content/Noah-Soqui-Resume.pdf')">View Resume</button>
+
+            </div>
+            <div class="window">
+                <h1>Bulletin</h1>
+                <h4>Current Cert Training (<a class="redLink" href="https://elearnsecurity.com/product/ejpt-certification/" target="_blank">eJPT</a>)</h4>
+                <p>So far have finished the content surrounding Assessment Methodologies and Host & Networking Auditing. Currently studying Host & Network Penetration Testing, and will finish with Web Application Penetration Testing. Will provide penetration testing reference notes upon completion.</p>
+                <h4>Current Relevant Coursework</h4>
+                <p>INTRO TO COMPUTER SYSTEM, PROGRAMMING STUDIO, EMBEDDED SYS DEV IN C.</p>
+                <p><r>Last updated Sep-2022</r></p>
+            </div>         
+        </div>
+    </div>
+    <script src="JS/navbar.js"></script>
+    <script src="JS/terminal.js"></script>
+</body>
+</html>

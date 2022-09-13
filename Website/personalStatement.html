@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="style" rel="stylesheet" href="CSS/style.css">
+    <title>Noah Soqui</title>
+</head>
+<body>
+    <!-- header -->
+    <div class="header">
+        <ul class="navbar"> 
+            <div class="navbarLeft">
+                <button type="button" onclick="dropdown()" id="dropbtn">Menu</button>
+                <button type="button" onclick="home()" id="me" class="link" >Noah Soqui</button>
+            </div>
+            <div class="navbarRight">
+                <button onclick="enableTerminal()" id="terminalButton" class="link">~$</button>
+            </div>  
+        </ul>  
+        <div class="terminalBox">
+            <textarea id="terminal" spellcheck="false" name="Text1" cols="40" rows="20" hidden></textarea>
+        </div>
+        <div class="dropdown-content" id="dropdownContent" hidden>
+            <li><button type="button" onclick="home()" id="currentPage" class="link" >Home</button></li>
+            <li><button type="button" onclick="projects()" class="link">Projects</button></li>
+            <li><button type="button" onclick="experience()" class="link">Experience</button></li>
+            <li><button type="button" onclick="certifications()" class="link">Certifications</button></li>    
+            <li><button type="button" onclick="qualifications()" class="link">Qualifications</button></li>
+            <li><button type="button" onclick="service()" class="link">Service</button></li>
+            <li><button type="button" onclick="personalStatement()" class="link">Personal Statement</button></li>
+        </div>
+    </div> 
+    <!-- content [Changes based on page] -->
+    <div class="content">
+        <div class="window">
+            <h1>Personal Statement</h1>
+            <p><em>Once men turned their thinking over to machines in the hope that this would set them free. But that only permitted other men with machines to enslave them.</em> <br>― <gr>Frank Herbert</gr></p>
+            <p>I enjoy technology, and I am in awe of its capability. With computers, networks, sensors, and actuators, I can do what a century ago would be considered supernatural. The sum of all human knowledge (mostly) is a tap away, I can move great machines with a command, sense events far outside my own ability, turn lines of words into a tangible change. All of this I am grateful for, and at the same time, apprehensive of. Because unlike the practitioners of the supernatural in ancient myth, we do not control our power. The perspective of humanity driving technology is true, but not complete. It is as if technology, and its integration into our society, was more of a phenomenon than a planned event. We built, innovated, and in our progress the conditions were right, and it emerged.</p>
+            <p>Technology is now a barreling cart, delivering us to possibility, capability, and connection. We are far past any attempt to slow down or stop, and in the space-between, there is a group who have seen how vulnerable we are. Of that group, there are those who will work to use that vulnerability to hurt or dominate others. I am wary of them, in my study I have learned to dislike their intention, but to respect their ability. All of our gifts, the magic of modern day, is a tool that can quickly become a weapon.</p>
+            <p>I resent that threat. The right talents and keystrokes can turn my awe of technology into fear. Although it is a new medium of conflict, the solution is ancient. “<em>To know your enemy you must become your enemy</em>”, Sun Tzu. With that perspective, we can study a system like a puzzle, hoping to understand its most minute details, all the way to its lofty abstractions. With that understanding, we can see human errors, inadequate defenses, unintended effects, and repercussive chain reactions.</p>
+            <p>I still continue to create technology. I have spent long swaths of my time learning how to develop it. The feeling of creating something, of turning a thought into substance will always be a source of personal fulfillment. But I also intend to see that dangerous potential, and to make it my own. To develop my ability to exploit systems, a fascinating puzzle, a way to safely test my own focus and determination. With that, I hope to contribute to making our awe-inspiring advances safer, as well as combat those who would use it for harm.</p>
+            <button class="defaultButton" type="submit" onclick="window.open('Content/Personal-Statement.pdf')">View Personal Statement Document</button>
+        </div> 
+    </div>
+    <script src="JS/navbar.js"></script>
+    <script src="JS/terminal.js"></script>
+</body>
+</html>

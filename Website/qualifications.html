@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="style" rel="stylesheet" href="CSS/style.css">
+    <title>Noah Soqui</title>
+</head>
+<body>
+    <!-- header -->
+    <div class="header">
+        <ul class="navbar"> 
+            <div class="navbarLeft">
+                <button type="button" onclick="dropdown()" id="dropbtn">Menu</button>
+                <button type="button" onclick="home()" id="me" class="link" >Noah Soqui</button>
+            </div>
+            <div class="navbarRight">
+                <button onclick="enableTerminal()" id="terminalButton" class="link">~$</button>
+            </div>  
+        </ul>  
+        <div class="terminalBox">
+            <textarea id="terminal" spellcheck="false" name="Text1" cols="40" rows="20" hidden></textarea>
+        </div>
+        <div class="dropdown-content" id="dropdownContent" hidden>
+            <li><button type="button" onclick="home()" id="currentPage" class="link" >Home</button></li>
+            <li><button type="button" onclick="projects()" class="link">Projects</button></li>
+            <li><button type="button" onclick="experience()" class="link">Experience</button></li>
+            <li><button type="button" onclick="certifications()" class="link">Certifications</button></li>    
+            <li><button type="button" onclick="qualifications()" class="link">Qualifications</button></li>
+            <li><button type="button" onclick="service()" class="link">Service</button></li>
+            <li><button type="button" onclick="personalStatement()" class="link">Personal Statement</button></li>
+        </div>
+    </div> 
+    <script src="JS/navbar.js"></script>
+    <script src="JS/terminal.js"></script>
+    <!-- content [Changes based on page] -->
+    <div class="content">
+        <div class="window">
+            <h1>Skills</h1>
+            <h4>Cybersecurity</h4>
+            <p>Have studied and been trained in Cybersecurity since my freshmen year of college. Have hands on experience as an analyst using many SIEMs like Splunk and extraHop, and SOARs like Gradient Cyber. Worked extensively in security incident handling, threat hunting, security automation/development, and offensive security.</p>
+            <h4>Computer Networks</h4>
+            <p>Can understand and build computer networks through the OSI model. Topics including Network Fundamentals, Network Implementations, Network Operations, Network Security, and Network Troubleshooting. Also have hands on experience securing a network using tools such as Splunk.</p>
+            <h4>Software Development</h4>
+            <p>Have built various projects through my computer science degree plan. Have also worked in industry developing security related projects, as well as personal projects for personal automation.</p>
+            <h4>Python App Development</h4>
+            <p>Can build, and have built, Python GUIs via libraries such as Tkinter and Kivy. Can then deploy them for Macs using Py2app, windows with Pyinstaller, or both as well as mobile with Kivy.</p>
+            <h4>Web Development</h4>
+            <p>Can build and deploy websites using classic front end programs such as HTML, CSS, JS. Also have some experience in backend via Flask framework.</p>
+        </div>
+        <div class="window">
+            <h1>Program Languages</h1>
+            <h4>Python</h4>
+            <div class="progressBar">
+                <div class="bar">
+                    <div style="width: 90%;" class="percent"></div>
+                </div>
+            </div>
+            <h4>C++</h4>
+            <div class="progressBar">
+                <div class="bar">
+                    <div style="width: 80%;" class="percent"></div>
+                </div>
+            </div>
+            <h4>HTML</h4>
+            <div class="progressBar">
+                <div class="bar">
+                    <div style="width: 60%;" class="percent"></div>
+                </div>
+            </div>
+            <h4>CSS</h4>
+            <div class="progressBar">
+                <div class="bar">
+                    <div style="width: 60%;" class="percent"></div>
+                </div>
+            </div>
+            <h4>JS</h4>
+            <div class="progressBar">
+                <div class="bar">
+                    <div style="width: 55%;" class="percent"></div>
+                </div>
+            </div>
+            <h4>C</h4>
+            <div class="progressBar">
+                <div class="bar">
+                    <div style="width: 50%;" class="percent"></div>
+                </div>
+            </div>
+            <h4>Java</h4>
+            <div class="progressBar">
+                <div class="bar">
+                    <div style="width: 50%;" class="percent"></div>
+                </div>
+            </div>
+        </div>
+        <div class="window">
+            <h1>Interests</h1>
+            <p>Coding, Computers, IOT, Cyber Security, Robotics, 3D Printing,
+            Physical Fitness, Aquatic Ecology and Science Fiction Reading</p>
+        </div>
+        <div class="window">
+            <h1>Resume</h1>
+                <br>
+                <button style="border: 2px solid #ecf2f7;font-weight:400;border-radius: 15px;padding:10px;" class="link" type="submit" onclick="window.open('Content/Noah-Soqui-Resume.pdf')">View Resume</button>
+        </div>
+    </div>
+</body>
+</html>
